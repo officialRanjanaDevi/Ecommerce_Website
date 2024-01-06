@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: url("bgimg.png");
+            background-size: 100% 100%;
+        }
+        
+        .outerdiv{
+            position: relative;
+        }
+        .login-box1 {
+            background-color: #095761;
+            position: absolute;
+            top: 40%;
+            left: 60%;
+        }
+
+        .login-box2 {
+            background-color: #095761;
+            position: absolute;
+            top: 70%;
+            left: 60%;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100 outerdiv ">
+
+        <form name="form" action="login.php" class="w-25 login-box1 p-3" method="POST">
+            <h2 class="text-center text-white">Login here...</h2>
+            <input type="text"  class="mt-2 form-control" placeholder="Enter Username" name="uname" id="uname">
+            <input type="password" class="mt-2 form-control" placeholder="Enter Password" name="upass" id="upass">
+            <div class="text-center mt-3">
+                <button class="btn btn-warning">Login</button>
+            </div>
+
+        </form>
+
+
+        <div class="login-box2 text-center mt-1 w-25 p-1 action  d-flex justify-content-center align-items-center">
+            <p class="text-white p-1">New User? </p>
+            <a href="signup.html">
+                <button class="btn btn-warning">Signup</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
